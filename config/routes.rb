@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   
-  root 'home#index'
+  get 'rockpaperscissors' => 'rockpaperscissors#index'
+
+  root 'home#homepage'
   
   devise_for :users
+
+  mount HowTo::Engine => "/answers"
   
 end
