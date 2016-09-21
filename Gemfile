@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Set Ruby version to suppress Heroku warning
-ruby '2.2.4'
+ruby '2.2.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use puma server
@@ -18,9 +18,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
-# gem for FAQ Markup Lanquage *Jason Loar*
-gem 'faqml'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
