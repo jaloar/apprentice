@@ -8,7 +8,7 @@
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
 
-  <title><%= content_for?(:title) ? yield(:title) : "Jason Loar Consulting, LLC" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : "App Name" %></title>
   <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "App desc" %>">
   <%= stylesheet_link_tag "how_to/application", :media => "all" %>
   <%= javascript_include_tag "how_to/application" %>
@@ -24,7 +24,15 @@
 
 <body>
 
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <%= render 'layouts/how_to/navigation' %>
+</nav>
 
+<div class="container">
+  <%= render 'layouts/how_to/navigation' %>
+  <%= yield %>
+</div>
+<!-- /container -->
 
 </body>
 </html>

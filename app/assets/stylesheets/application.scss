@@ -63,26 +63,15 @@ body {
 	text-align: center;
 }
 
-.home1 {
-	background-image: url("../assets/px.png");
-	// position:relative;
- //    z-index:1;
- //    height:100px;
- //    width:100%;
- //    background-attachment:fixed;    /* this keeps the background in place */
- //    background-size:100% 100%;
- //    background-repeat: repeat;
-}
-
-.home2 {
-	background-image: url("../assets/pentagon.png");
-	// position:relative;
- //    z-index:1;
- //    height:100px;
- //    width:100%;
- //    background-attachment:fixed;    /* this keeps the background in place */
- //    background-size:100% 100%;
- //    background-repeat: repeat;
+.home {
+	background-image: url("../images/px_@2X.png");
+	position:relative;
+    /*z-index:1;
+    height:100px;
+    width:100%;*/
+    background-attachment:fixed;    /* this keeps the background in place */
+    /*background-size:100% 100%;*/
+    background-repeat: repeat;
 }
 
 #title {
@@ -99,5 +88,5 @@ body {
 }
 
 #text {
-	color: white;
+	color: black;
 }
