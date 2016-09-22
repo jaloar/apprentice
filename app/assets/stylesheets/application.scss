@@ -37,3 +37,80 @@ body {
 		margin-top: 0;
 	}
 }
+
+.mtop-10 {
+	margin-top: 10px;
+}
+
+.no-bottom {
+	margin-bottom: 0px;
+}
+
+.padding {
+	padding: 10px;
+}
+
+.bar {
+	border-top:  solid red 5px;
+	padding-top: 10px;
+}
+
+#bottom {
+	margin-top: 20px;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+.home1 {
+	background-image: url("/assets/px_@2X.png");
+	// position:relative;
+ //    z-index:1;
+ //    // height:100px;
+ //    // width:100%;
+ //    background-attachment:fixed;    /* this keeps the background in place */
+ //    // background-size:100% 100%;
+ //    background-repeat: repeat;
+}
+
+#title {
+	color: white;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.autoModal .modal-body {
+    max-height: 100%;
+}
+
+#text {
+	color: white;
+}
+
+.rps_body {
+	background: url("/assets/pentagon.png");
+}
+
+.rps_btn {
+	font-size: 30px;
+}
+
+.game {
+	padding: 20px;
+	text-align: center;
+}
+
+.rps_jumbotron {
+	text-align: center;
+	opacity: 100%;
+    font-family: 'canterlight';
+    src: url('/assets/canter_light-webfont.woff2') format('woff2'),
+         url('/assets/cantercanter_light-webfont.woff') format('woff'),
+         url('/assets/cantercanter_light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
