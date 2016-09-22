@@ -11,10 +11,48 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150207223153) do
+ActiveRecord::Schema.define(version: 20160922010942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "how_to_content_translations", force: :cascade do |t|
+    t.integer  "how_to_content_id"
+    t.string   "locale"
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "how_to_contents", force: :cascade do |t|
+    t.integer  "section_id"
+    t.integer  "position",   default: 0
+    t.boolean  "active",     default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "how_to_section_translations", force: :cascade do |t|
+    t.integer  "how_to_section_id"
+    t.string   "locale"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "how_to_sections", force: :cascade do |t|
+    t.integer  "parent_id"
+    t.boolean  "active",             default: true
+    t.integer  "sub_sections_count", default: 0
+    t.integer  "contents_count",     default: 0
+    t.integer  "position",           default: 0
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.integer  "depth"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
