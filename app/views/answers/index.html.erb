@@ -1,25 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'New Answer', new_answer_path %>
 
-<h1>Answers FAQ Page</h1>
+<body class="home1">
 
-<table>
-  <thead>
-    <tr>
-      <th>Index</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @answers.each do |answer| %>
-      <tr>
-        <td><%= answer.index %></td>
-        <td><%= link_to 'Show', answer %></td>
-        <td><%= link_to 'Edit', edit_answer_path(answer) %></td>
-        <td><%= link_to 'Destroy', answer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<h1 class="jumbotron">Answers FAQ Page</h1>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <% @answers.each do |answer| %>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2><%= answer.question %></h2></div>
+        <div class="panel-body"><%= answer.answer %></div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+</body>
