@@ -1,5 +1,5 @@
 class AnswersController < ApplicationController
-  http_basic_authenticate_with name: "dhh", password: "secret"
+  http_basic_authenticate_with name: "user", password: "password"
 
   before_action :set_answer, only: [:show, :edit, :update, :destroy]
 
