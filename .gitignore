@@ -28,3 +28,5 @@ bower.json
 
 # Ignore environment variable file
 .env
+# Ignore application configuration
+/config/application.yml

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :maps
+
   resources :answers
 
   get 'answers' => 'answers#index'
@@ -11,6 +13,8 @@ Rails.application.routes.draw do
   get 'home' => 'home#index'
 
   get 'rps' => 'rockpaperscissors#index'
+
+  get 'maps' => 'maps#index'
   
   devise_for :users
 
